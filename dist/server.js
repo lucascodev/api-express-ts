@@ -8,4 +8,7 @@ const app = (0, express_1.default)();
 app.get("/users", (req, res) => {
     res.send("route users");
 });
+app.get("/", (req, res) => {
+    res.send("API");
+});
 app.listen(3000, () => console.log("Server online in Port: 3000!"));
