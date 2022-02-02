@@ -1,8 +1,8 @@
-const express = require("express");
+import express from "express";
 
 const app = express();
 
-app.get("/users", (req, res) => {
+app.get("/users", (req: any, res: any) => {
   res.send("route users");
 });
 
